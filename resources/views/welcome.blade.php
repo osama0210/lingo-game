@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/lingo-board.css') }}">
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('/js/script.js') }}" defer></script>
     <title>Lingo</title>
 </head>
 <body>
