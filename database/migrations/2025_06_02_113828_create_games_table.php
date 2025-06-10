@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('games', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('word_id')->constrained('words');
-            $table->boolean('won');
+            $table->foreignId('word_id')->constrained('words')->onDelete('cascade');
+            $table->boolean('won')->nullable();
             $table->timestamps();
         });
     }

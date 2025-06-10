@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('guesses', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('game_id')->constrained('games')->onDelete('cascade');
+            $table->string('guessed_word', 5);
+            $table->integer('turn');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
