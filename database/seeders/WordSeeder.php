@@ -12,6 +12,7 @@ class WordSeeder extends Seeder
      */
     public function run(): void
     {
+        // 100 random woorden voor de lingo game
         $words = [
             'apple', 'grape', 'lemon', 'mango', 'peach',
             'bread', 'crisp', 'flame', 'blaze', 'crane',
